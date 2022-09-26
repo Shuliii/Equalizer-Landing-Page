@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  background: url("./assets/bg-main-desktop.png"),
+    url("./assets/bg-pattern-1.svg");
+  background-repeat: no-repeat;
+  background-position: top -300px left -250px, top -40px right 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 69.375rem;
+  margin-inline: auto;
+  padding: 2rem;
+}
+
+header {
+  margin-top: 3.875rem;
+}
+
+.hero-section {
+  margin-top: 7.9375rem;
+  /* margin-right: 16.25rem; */
+}
+
+.hero-section > h1 {
+  font-family: "IBM Plex Sans";
+  font-weight: 700;
+  font-size: min(6.1vw, 5.5rem);
+  line-height: min(6.1vw, 5.5rem);
+  letter-spacing: -1px;
+
+  color: #191826;
+  max-width: 1015px;
+}
+
+.hero-section > p {
+  font-family: "IBM Plex Sans";
+  font-weight: 400;
+  font-size: min(1.39vw, 1.25rem);
+  line-height: 2.125rem;
+
+  color: #191826;
+  margin-top: 2.5rem;
+  max-width: 825px;
+}
+
+.phone-container {
+  margin-top: 20.625rem;
+  background: #191826 url("./assets/bg-pattern-2.svg") no-repeat right 462px top -40px;
+  height: 37.5rem;
+  border-radius: 0.75rem;
+  position: relative;
+}
+
+.phone-container > img {
+  max-width: 312px;
+  height: auto;
+  position: absolute;
+  left: 102px;
+  top: -213px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #fa7453;
+  border-radius: 0.75rem;
+  position: absolute;
+  top: 90px;
+  right: 95px;
+  max-width: 446px;
+  min-height: 625px;
+  padding-left: 54px;
+  padding-right: 59px;
+  color: #fcfaf9;
+}
+
+.card > h2 {
+  margin-top: 58px;
+  font-family: "IBM Plex Sans";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.card > p {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.card > p:first-of-type {
+  margin-top: 22px;
+  line-height: 34px;
+}
+
+.card > p:last-of-type:not(span) {
+  margin-top: 39px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+
+.card > p:last-of-type > span {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 52px;
+
+  margin-right: 1rem;
+}
+
+.card > .button {
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 15px 14px;
+  border: none;
+}
+
+.card > .button-black {
+  background: #191826;
+  color: #fcfaf9;
+}
+
+.card > .button-white {
+  color: #191826;
+  background: #fcfaf9;
+}
+
+.card > button:first-of-type {
+  margin-top: 46px;
+  margin-bottom: 1rem;
+}
+
+.card > button > img {
+  margin-right: 7.9px;
+}
+
+.card > button > p {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+
+  text-align: center;
+  letter-spacing: -0.18px;
+}
+
+footer {
+  display: flex;
+  margin-top: 202px;
+  justify-content: space-between;
+}
+
+.footer-description {
+  max-width: 366px;
+  min-height: 79px;
+  margin-left: 137.76px;
+}
+
+.footer-contact > ul {
+  list-style-type: none;
+  display: flex;
+}
